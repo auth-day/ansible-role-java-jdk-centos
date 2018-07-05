@@ -1,5 +1,8 @@
 - name: create directory for java 
   file: path=/opt/java state=directory mode=0775
+  
+- name: just in case install wget hehehe
+  yum: name=wget state=latest
 
 - name: download java jdk
   shell: "wget --no-cookies --no-check-certificate --header 'Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie' \
