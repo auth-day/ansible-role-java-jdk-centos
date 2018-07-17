@@ -10,3 +10,6 @@
 
 - name: install java jdk
   yum: name=/opt/java/jdk-8u131-linux-x64.rpm state=present
+
+- name: create link to java 
+  file: state=link src=/usr/java/jdk1.8.0_131/ dest=/opt/java
