@@ -1,0 +1,3 @@
+java_distr_path: /opt/java_distr
+java_path: /opt/java
+java_installed_path: /usr/java/jdk1.8.0_131
